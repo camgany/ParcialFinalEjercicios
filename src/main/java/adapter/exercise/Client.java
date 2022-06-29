@@ -6,7 +6,7 @@ public class Client {
         public static void main(String []args) throws InterruptedException {
 
             ICuadratrack cuadratrack1 = new CuadratrackDiesel();
-            ICuadratrack cuadratrack2 = new adquirir(new CuadratrackElectrico());
+            ICuadratrack cuadratrack2 = new Adquirir(new CuadratrackElectrico());
             ICuadratrack cuadratrack3 = new CuadratrackGasolina();
             ICuadratrack cuadratrack4 = new CuadratrackGasolinaEspecial();
 

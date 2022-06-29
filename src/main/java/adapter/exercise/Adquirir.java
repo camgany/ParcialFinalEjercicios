@@ -1,9 +1,9 @@
 package adapter.exercise;
 
-public class adquirir implements ICuadratrack{
+public class Adquirir implements ICuadratrack{
     private IElectricos electricos;
 
-    public adquirir(IElectricos electricos) {
+    public Adquirir(IElectricos electricos) {
         this.electricos = electricos;
     }
 
