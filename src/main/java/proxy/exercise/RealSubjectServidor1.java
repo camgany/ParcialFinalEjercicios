@@ -15,10 +15,19 @@ public class RealSubjectServidor1 implements ICluster {
 
     @Override
     public void login(Usuario usuario, String password) {
-        System.out.println("*********************************************************************************");
         System.out.println("Uniendo al Servidor 1 al usurio: "+usuario.getNombre());
         usuarios.add(usuario);
         System.out.println("Guardado exitosamente!");
-        System.out.println("*********************************************************************************");
+    }
+
+    @Override
+    public void showlIst() {
+        System.out.println("======LISTA DE USUARIOS SERVIDOR 1=====");
+        for (Usuario u:usuarios
+             ) {
+            System.out.println("//////////////////////////////");
+            System.out.println("Nombre: "+u.getNombre());
+            System.out.println("ID: "+u.getId());
+        }
     }
 }

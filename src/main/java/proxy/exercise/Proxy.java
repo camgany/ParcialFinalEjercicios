@@ -31,6 +31,7 @@ public class Proxy implements ICluster {
     }
     @Override
     public void login(Usuario usuario, String password) {
+        System.out.println("*********************************************************************************");
         if (usuario.getPassword()==password){
             System.out.println("Contraseña correcta!");
             if(primo(usuario.getId())){
@@ -43,5 +44,11 @@ public class Proxy implements ICluster {
         }else{
             System.out.println("Contraseña Incorrecta! ");
         }
+    }
+
+    @Override
+    public void showlIst() {
+        servidor1.showlIst();
+        servidor2.showlIst();
     }
 }
